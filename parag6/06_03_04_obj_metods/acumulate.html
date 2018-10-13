@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://learn.javascript.ru/test/libs.js"></script>
+  <script src="test.js"></script>
+</head>
+<body>
+
+  <script>
+ function Accumulator(startingValue){
+   this.value = startingValue;
+   this.read = function(){ 
+     this.value += +prompt('введите число' , '');
+   };
+ }
+var accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+alert( accumulator.value );
+  </script>
+
+</body>
+</html>
