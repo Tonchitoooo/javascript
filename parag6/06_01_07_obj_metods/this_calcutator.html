@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://learn.javascript.ru/test/libs.js"></script>
+  <script src="test.js"></script>
+</head>
+<body>
+
+  <script>
+
+    calculator = {
+      sum: function(){
+        return this.a + this.b;
+      },
+      mul: function(){
+        return this.a * this.b;
+      },
+      read: function(){ 
+        this.a = +prompt('Введите число а','');
+        this.b = +prompt('введиет число b','');
+      },
+    }
+    calculation.read();
+    alert(calculation.sum());
+    alert(calculation.mul());
+
+  </script>
+
+</body>
+</html>
