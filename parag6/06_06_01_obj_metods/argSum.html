@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    function sumArgs() {
+      // скопируем reduce из массива
+      arguments.reduce = [].reduce;
+      return arguments.reduce(function(a, b) {
+        return a + b;
+      });
+    }
+    
+    alert( sumArgs(4, 5, 6) ); // 15
+  </script>
+</body>
+
+</html>
