@@ -1,9 +1,19 @@
-Function.prototype.defer = function(ms) {
-  setTimeout(this, ms);
-}
+<!DOCTYPE html>
+<html>
 
-function f() {
-  alert( "привет" );
-}
+<body>
+  <script>
+    'use strict';
+    Function.prototype.defer = function(ms) {
+      setTimeout(this, ms);
+    }
+    
+    function f() {
+      alert( "привет" );
+    }
+    
+    f.defer(1000); // выведет "привет" через 1 секунду
+  </script>
+</body>
 
-f.defer(1000); // выведет "привет" через 1 секунду
+</html>
